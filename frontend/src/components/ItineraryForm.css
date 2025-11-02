@@ -1,0 +1,660 @@
+/* iOS 7 Design - Flat, Clean, Minimal */
+
+.ios-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #f5f5f7 0%, #e8e8ed 100%);
+  min-height: 100vh;
+}
+
+/* Header */
+.ios-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding-top: 30px;
+}
+
+.ios-title {
+  font-size: 48px;
+  font-weight: 300;
+  color: #1d1d1f;
+  margin: 0 0 12px 0;
+  letter-spacing: -1px;
+}
+
+.ios-subtitle {
+  font-size: 21px;
+  font-weight: 400;
+  color: #86868b;
+  margin: 0;
+}
+
+/* Card Container */
+.ios-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 50px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+/* Form */
+.ios-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.ios-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ios-form-group-half {
+  flex: 1;
+}
+
+/* Labels */
+.ios-label {
+  font-size: 15px;
+  font-weight: 500;
+  color: #86868b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ios-char-count {
+  font-size: 14px;
+  color: #86868b;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+/* Inputs */
+.ios-input,
+.ios-textarea {
+  width: 100%;
+  padding: 16px 20px;
+  font-size: 19px;
+  font-weight: 400;
+  color: #1d1d1f;
+  background: #f5f5f7;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  outline: none;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.ios-input:focus,
+.ios-textarea:focus {
+  background: #ffffff;
+  border-color: #007AFF;
+  box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.1);
+}
+
+.ios-input::placeholder,
+.ios-textarea::placeholder {
+  color: #c7c7cc;
+  font-weight: 400;
+}
+
+.ios-input-error {
+  border-color: #FF3B30;
+  background: #fff5f5;
+}
+
+.ios-input-error:focus {
+  box-shadow: 0 0 0 3px rgba(255, 59, 48, 0.1);
+}
+
+/* Date Inputs */
+.ios-date-row {
+  display: flex;
+  gap: 16px;
+}
+
+.ios-input-date {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+}
+
+/* Number Input with Stepper */
+.ios-stepper-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ios-input-number {
+  text-align: center;
+  flex: 1;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* Remove spinner arrows from number input */
+.ios-input-number::-webkit-inner-spin-button,
+.ios-input-number::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.ios-input-number {
+  -moz-appearance: textfield;
+}
+
+.ios-stepper-button {
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 22px;
+  background: #007AFF;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.ios-stepper-button:hover:not(:disabled) {
+  background: #0051D5;
+  transform: scale(1.05);
+}
+
+.ios-stepper-button:active:not(:disabled) {
+  transform: scale(0.95);
+}
+
+.ios-stepper-button:disabled {
+  background: #c7c7cc;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* Textarea */
+.ios-textarea {
+  resize: vertical;
+  min-height: 100px;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* Error Text */
+.ios-error-text {
+  font-size: 15px;
+  color: #FF3B30;
+  font-weight: 400;
+  margin-top: 6px;
+}
+
+/* Alert Messages */
+.ios-alert {
+  padding: 20px;
+  border-radius: 12px;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.ios-alert-error {
+  background: #fff5f5;
+  color: #FF3B30;
+  border: 1px solid #ffebeb;
+}
+
+.ios-alert-success {
+  background: #f0fdf4;
+  color: #15803d;
+  border: 1px solid #dcfce7;
+}
+
+.ios-alert-title {
+  font-weight: 600;
+  font-size: 17px;
+  margin-bottom: 4px;
+}
+
+.ios-alert-message {
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.ios-alert-id {
+  font-size: 13px;
+  color: #86868b;
+  font-family: 'SF Mono', Monaco, 'Courier New', monospace;
+  margin-top: 8px;
+}
+
+/* Button */
+.ios-button {
+  width: 100%;
+  padding: 18px 24px;
+  font-size: 19px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+.ios-button-primary {
+  background: #007AFF;
+  color: #ffffff;
+}
+
+.ios-button-primary:hover:not(:disabled) {
+  background: #0051D5;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3);
+}
+
+.ios-button-primary:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0, 122, 255, 0.2);
+}
+
+.ios-button:disabled {
+  background: #c7c7cc;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Loading Spinner */
+.ios-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.ios-spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: ios-spin 0.8s linear infinite;
+}
+
+@keyframes ios-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Footer */
+.ios-footer {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.ios-footer p {
+  font-size: 15px;
+  color: #86868b;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .ios-container {
+    width: 95%;
+    padding: 30px 20px;
+  }
+
+  .ios-card {
+    padding: 35px;
+  }
+
+  .ios-title {
+    font-size: 38px;
+  }
+
+  .ios-subtitle {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ios-container {
+    width: 100%;
+    padding: 20px 15px;
+  }
+
+  .ios-card {
+    padding: 25px;
+    border-radius: 16px;
+  }
+
+  .ios-title {
+    font-size: 32px;
+  }
+
+  .ios-subtitle {
+    font-size: 16px;
+  }
+
+  .ios-form {
+    gap: 24px;
+  }
+
+  .ios-input,
+  .ios-textarea {
+    padding: 14px 18px;
+    font-size: 17px;
+  }
+
+  .ios-button {
+    padding: 16px 20px;
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 640px) {
+  .ios-container {
+    padding: 16px;
+  }
+
+  .ios-card {
+    padding: 20px;
+  }
+
+  .ios-title {
+    font-size: 28px;
+  }
+
+  .ios-subtitle {
+    font-size: 15px;
+  }
+
+  .ios-date-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .ios-form-group-half {
+    width: 100%;
+  }
+
+  .ios-input,
+  .ios-textarea {
+    padding: 12px 16px;
+    font-size: 16px;
+  }
+
+  .ios-button {
+    padding: 14px 18px;
+    font-size: 16px;
+  }
+}
+
+/* Dark Mode Support (iOS 7 didn't have dark mode, but we can add it) */
+@media (prefers-color-scheme: dark) {
+  .ios-container {
+    background: linear-gradient(135deg, #1c1c1e 0%, #2c2c2e 100%);
+  }
+
+  .ios-card {
+    background: #2c2c2e;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .ios-title {
+    color: #f5f5f7;
+  }
+
+  .ios-subtitle,
+  .ios-label,
+  .ios-char-count,
+  .ios-footer p {
+    color: #98989d;
+  }
+
+  .ios-input,
+  .ios-textarea {
+    background: #1c1c1e;
+    color: #f5f5f7;
+    border-color: #3a3a3c;
+  }
+
+  .ios-input:focus,
+  .ios-textarea:focus {
+    background: #2c2c2e;
+    border-color: #007AFF;
+  }
+
+  .ios-input::placeholder,
+  .ios-textarea::placeholder {
+    color: #48484a;
+  }
+
+  .ios-input-error {
+    background: #2c1f1f;
+    border-color: #FF3B30;
+  }
+
+  .ios-alert-error {
+    background: #2c1f1f;
+    color: #ff6961;
+    border-color: #3c2020;
+  }
+
+  .ios-alert-success {
+    background: #1f2c1f;
+    color: #7dd87d;
+    border-color: #203c20;
+  }
+
+  .ios-alert-id {
+    color: #98989d;
+  }
+}
+
+/* Trip Plan Details */
+.trip-plan-details {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.trip-section {
+  margin-bottom: 35px;
+}
+
+.trip-section:last-child {
+  margin-bottom: 0;
+}
+
+.trip-section-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 20px 0;
+  letter-spacing: -0.5px;
+}
+
+.trip-summary {
+  font-size: 17px;
+  line-height: 1.6;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* Attractions */
+.attractions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.attraction-card {
+  background: #f5f5f7;
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.2s ease;
+}
+
+.attraction-card:hover {
+  background: #ebebef;
+  transform: translateY(-2px);
+}
+
+.attraction-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.attraction-number {
+  background: #007AFF;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.attraction-name {
+  font-size: 19px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin: 0;
+  flex: 1;
+}
+
+.attraction-description {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #86868b;
+  margin: 0 0 10px 0;
+}
+
+.attraction-distance {
+  font-size: 14px;
+  color: #007AFF;
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+.attraction-address {
+  font-size: 13px;
+  color: #86868b;
+  margin-top: 4px;
+}
+
+/* Flights */
+.flights-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.flight-card {
+  background: #f5f5f7;
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.2s ease;
+}
+
+.flight-card:hover {
+  background: #ebebef;
+  transform: translateY(-2px);
+}
+
+.flight-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.flight-airline {
+  font-size: 19px;
+  font-weight: 600;
+  color: #1d1d1f;
+}
+
+.flight-price {
+  font-size: 21px;
+  font-weight: 700;
+  color: #007AFF;
+}
+
+.flight-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.flight-time {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  color: #1d1d1f;
+  font-weight: 500;
+}
+
+.flight-arrow {
+  color: #86868b;
+  font-size: 18px;
+}
+
+.flight-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #86868b;
+  flex-wrap: wrap;
+}
+
+/* Responsive adjustments for trip plan */
+@media (max-width: 768px) {
+  .trip-section-title {
+    font-size: 20px;
+  }
+
+  .attraction-card,
+  .flight-card {
+    padding: 16px;
+  }
+
+  .attraction-name {
+    font-size: 17px;
+  }
+
+  .flight-airline {
+    font-size: 17px;
+  }
+
+  .flight-price {
+    font-size: 19px;
+  }
+}

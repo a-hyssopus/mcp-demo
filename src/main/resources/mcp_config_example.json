@@ -1,0 +1,23 @@
+{
+  "mcpServers": {
+    "MCP_DOCKER": {
+      "command": "docker",
+      "args": [
+        "mcp",
+        "gateway",
+        "run"
+      ]
+    },
+    "amadeus": {
+      "command": "/opt/homebrew/bin/uv",
+      "args": [
+        "--directory",
+        "${PATH}/mcp-amadeus/src/",
+        "run",
+        "--env-file",
+        "${PATH}/mcp-amadeus/.env",
+        "server.py"
+      ]
+    }
+  }
+}
